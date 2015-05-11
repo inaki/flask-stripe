@@ -1,0 +1,84 @@
+/* how section */
+
+#how {
+  min-height: 800px;
+  background: white;
+  color: #666;
+}
+
+#how .row {
+  position: relative;
+  top: 100px;
+}
+
+#how .col-md-4 {
+  text-align: center;
+}
+
+#how .col-md-4 img{
+    width: 180px;
+    heigth: 180px;
+}
+
+#how .call2action {
+  position: relative;
+  margin: 0 auto;
+  width: 180px;
+  top: 75px;
+  text-align: center;
+}
+
+#how .call2action button {
+  background-color: mediumorchid;
+  color: white;
+  width: 180px;
+}
+
+#how .call2action button:hover {
+  background-color: white;
+  color: mediumorchid;
+  border: 1px solid mediumorchid;
+
+}
+
+
+/* footer section */
+#footer {
+  height: 230px;
+  background: gray;
+  margin-top: -5px;
+}
+
+#footer .involve {
+  position: relative;
+  margin: 0 auto;
+  width: 130px;
+  margin-top: 90px;
+}
+
+/* form code */
+form article label {
+  display: block;
+  margin: 5px;
+}
+
+form .submit {
+  margin: 15px 0;
+}
+
+.stripe-button-el span {
+  background: white !important;
+  color: #452C49 !important;
+  width: 135px;
+  height: 40px;
+}
+
+.stripe-button-el {
+  background-image: none !important;
+  background: white !important;
+  width: 135px;
+  height: 40px;
+  position: relative;
+  top: 25px;
+  left: 235px;
+}

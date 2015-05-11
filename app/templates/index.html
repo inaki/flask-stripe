@@ -1,0 +1,74 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<div id="home" class="site-wrapper">
+
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">CSA Buydown</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#how">How it works?</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="inner cover">
+        <h1 class="cover-heading">19,000 people struggle to buy fruits and vegetables.</h1>
+        <p class="lead">Fruits and vegetables aren't luxury items, but many Broderick families can't afford them. You can give $20 and help feed your neightbors. Your money pays for a box of fresh produce delivered to families every week.</p>
+
+        <form action="/charge" method="post">
+            <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button" data-key="{{ key }} "></script>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div id="how" class="">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <img class="img-circle" src="static/img/ernie.png" alt="ernie">
+          <h3>Get Money</h3>
+          <p>With your money we are helping to create affordability for those in need. Everyone deserve access to healthy food.</p>
+        </div>
+
+        <div class="col-md-4">
+          <img class="img-circle" src="static/img/elmo.png" alt="ernie">
+          <h3>Create Discounts</h3>
+          <p>Those participating in our program will pay for their food, but at a rate that is accord to their economic situation.</p>
+        </div>
+
+        <div class="col-md-4">
+          <img class="img-circle" src="static/img/monster.png" alt="ernie">
+          <h3>Deliver to families</h3>
+          <p>There is millions of families in America who live in food deserts. This means that they don not even have the option of buy healthy food. </p>
+        </div>
+        <div class="call2action">
+          <button type="button" class="btn btn-lg btn-default">Help a resident!</button>
+        </div>
+    </div>
+  </div>
+</div>
+<div id="footer" class="">
+  <div class="container">
+      <div class="involve">
+        <a href="#" class="btn btn-lg btn-default">Get involve!</a>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}
